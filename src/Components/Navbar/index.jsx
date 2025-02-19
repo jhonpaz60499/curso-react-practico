@@ -16,7 +16,7 @@ const NavBar = () => {
                         className={({ isActive }) =>
                             isActive ? activeStyle : undefined
                         }>
-                        Todo
+                        All
                     </NavLink>
                 </li>
                 <li>
@@ -25,7 +25,7 @@ const NavBar = () => {
                         className={({ isActive }) =>
                             isActive ? activeStyle : undefined
                         }>
-                        Ropa
+                        Clothes
                     </NavLink>
                 </li>
                 <li>
@@ -34,7 +34,7 @@ const NavBar = () => {
                         className={({ isActive }) =>
                             isActive ? activeStyle : undefined
                         }>
-                        Electronica
+                        Electronics
                     </NavLink>
                 </li>
                 <li>
@@ -43,7 +43,7 @@ const NavBar = () => {
                         className={({ isActive }) =>
                             isActive ? activeStyle : undefined
                         }>
-                        Muebles
+                        Furnitures
                     </NavLink>
                 </li>
                 <li>
@@ -52,7 +52,7 @@ const NavBar = () => {
                         className={({ isActive }) =>
                             isActive ? activeStyle : undefined
                         }>
-                        Juguetes
+                        Toys
                     </NavLink>
                 </li>
                 <li>
@@ -61,7 +61,7 @@ const NavBar = () => {
                         className={({ isActive }) =>
                             isActive ? activeStyle : undefined
                         }>
-                        Otros
+                        Others
                     </NavLink>
                 </li>
             </ul>
@@ -75,7 +75,7 @@ const NavBar = () => {
                     className={({ isActive }) =>
                         isActive ? activeStyle : undefined
                     }>
-                        Mis ordenes
+                        My orders
                     </NavLink>
                 </li>
                 <li>
@@ -84,7 +84,7 @@ const NavBar = () => {
                         className={({ isActive }) =>
                             isActive ? activeStyle : undefined
                         }>
-                        Mi cuenta
+                        My account
                     </NavLink>
                 </li>
                 <li>
@@ -93,7 +93,7 @@ const NavBar = () => {
                         className={({ isActive }) =>
                             isActive ? activeStyle : undefined
                         }>
-                        Iniciar sesion
+                        Sign in
                     </NavLink>
                 </li>
                 <li>

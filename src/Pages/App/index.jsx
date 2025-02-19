@@ -1,4 +1,5 @@
 import { useRoutes, BrowserRouter } from 'react-router-dom' // esto es lo de las rutas
+import { ShoppingCartProvider } from '../../Context' //aqui estamos trayendo el contexto global de la app
 import Home from '../Home'
 import MyAccount from '../MyAccount'
 import MyOrder from '../MyOrder'
@@ -22,10 +23,12 @@ const AppRoutes = () => {
 
 function App() {
   return (
-    <BrowserRouter>
-      <AppRoutes/>
-      <NavBar/>
-    </BrowserRouter>
+    <ShoppingCartProvider>
+      <BrowserRouter>
+        <AppRoutes/>
+        <NavBar/>
+      </BrowserRouter>
+    </ShoppingCartProvider>
   )
 }
 
