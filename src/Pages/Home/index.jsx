@@ -2,6 +2,7 @@ import { useState, useEffect } from "react" //useState es para crear el estado, 
 // ir acompaniado de useEffect para ayudarnos a encapsular la respues de la API y comsumir la API
 import Layout from "../../Components/Layout"
 import Card from "../../Components/Card"
+import ProductDetail from "../../Components/ProductDetail"
 
 
 function Home() {
@@ -23,6 +24,7 @@ function Home() {
           ))
         }
         </div>
+        <ProductDetail/>
       </Layout>      
     )
   }
