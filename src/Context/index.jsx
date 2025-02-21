@@ -17,6 +17,10 @@ export const ShoppingCartProvider = ({children}) => {
     // Product detail - show product
     const [productToShow, setProductToShow] = useState({})
 
+    // shopping cart products - add products to cart
+    const [cartProducts, setCartProducts] = useState([])
+
+
     return (
         <ShoppingCartContext.Provider value={{ 
             // aqui lo que hacemos es proveer a los hijos (lo que esta abajo que se llama children) con los datos para que ellos los usen y los
@@ -27,7 +31,9 @@ export const ShoppingCartProvider = ({children}) => {
             closeProductDetail,
             isProductDetailOpen,
             productToShow,
-            setProductToShow
+            setProductToShow,
+            cartProducts,
+            setCartProducts
         }}>
             {children}
         </ShoppingCartContext.Provider>
