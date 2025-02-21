@@ -6,10 +6,16 @@ export const ShoppingCartContext = createContext()
 
 // con este provider vamos a "proveer" toda la informacion a los demas 
 export const ShoppingCartProvider = ({children}) => {
+    // shopping cart - increment quantity
     const [count, setCount] = useState(0)
+
+    // Product detail - open/close
     const [isProductDetailOpen, setIsProductDetailOpen] = useState(false)
     const openProductDetail = () => setIsProductDetailOpen(true)
     const closeProductDetail = () => setIsProductDetailOpen(false)
+
+    // Product detail - show product
+    const [productToShow, setProductToShow] = useState({})
 
     return (
         <ShoppingCartContext.Provider value={{ 
@@ -19,7 +25,9 @@ export const ShoppingCartProvider = ({children}) => {
             setCount,
             openProductDetail,
             closeProductDetail,
-            isProductDetailOpen
+            isProductDetailOpen,
+            productToShow,
+            setProductToShow
         }}>
             {children}
         </ShoppingCartContext.Provider>
